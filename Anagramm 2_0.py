@@ -33,7 +33,7 @@ if guess == correct:
     score = 1000 - (number_of_tries)*100 - hint*200
     if score < 0:
         score = 0
-    if score < 500:
+    if score < 500 and score > 0:
         print("Looks like your score is ", end = '')
         print(score)
         print("At first I thought you could do better. If that is your best...")
